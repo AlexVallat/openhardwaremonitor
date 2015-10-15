@@ -809,6 +809,7 @@ namespace OpenHardwareMonitor.GUI {
       computer.Accept(new SensorVisitor(delegate(ISensor sensor) {
         sensor.ResetMin();
         sensor.ResetMax();
+		sensor.ClearHistory();
       }));
     }
 
